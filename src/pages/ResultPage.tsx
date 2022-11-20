@@ -59,7 +59,7 @@ export const ResultPage = () => {
       new File([blob], 'result.png', { type: blob.type, lastModified: new Date().getTime() })
     ];
     const shareData = {
-      text: '#남성동성애자자기소개서 https://test.github.io/asdf/asdf ... ',
+      text: '#민망통계 #게이자소서 간단하게 당신을 소개해보세요! https://minmangtonggye.github.io/introduce-table @minmangtonggye',
       files: filesArray,
     };
 
