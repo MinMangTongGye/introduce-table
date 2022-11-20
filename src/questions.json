@@ -61,7 +61,7 @@
     {
       "key": "7_hiv",
       "title": "HIV",
-      "description": "FIXME: 민감한 섹션이라 어떻게 설명을 적어야 할지 모르겠어요.",
+      "description": "응답하고 싶지 않은 경우 '건너뛰기' 버튼을 누르면 이 질문을 건너뛸 수 있습니다.",
       "is_sensitive": true,
       "question": {
         "type": "checkboxset",
