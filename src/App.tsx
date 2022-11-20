@@ -1,26 +1,66 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useContext} from 'react';
+import styled from "@emotion/styled";
+
 import './App.css';
+import { IntroPage } from './pages/IntroPage';
+
+import Questions from './questions.json';
+import {QuestionPage} from "./pages/QuestionPage";
+import {AppContext, AppContextProvider} from "./contexts/AppContext";
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+  height: 100vh;
+  
+  justify-content: center;
+  
+  @media screen and (min-width: 800px) {
+    width: auto;
+    height: 100vh;
+    
+    margin: 0 auto;
+    
+    aspect-ratio: 9 / 16;
+  }
+`;
 
 function App() {
+  const {
+    questions,
+    currentPhase,
+    currentQuestion,
+    setPhase,
+    nextQuestion,
+    skipQuestion
+  } = useContext(AppContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      { currentPhase === 'title' && <>
+        <IntroPage start={() => setPhase('question')} />
+      </> }
+
+      { currentPhase === 'question' && <>
+        <QuestionPage
+          questionDef={questions[currentQuestion]}
+          nextQuestion={nextQuestion}
+          skipQuestion={skipQuestion}
+        />
+      </> }
+
+    </AppContainer>
   );
 }
 
-export default App;
+
+function AppRoot() {
+  return (
+    <AppContextProvider questions={Questions.questions as QuestionDef[]}>
+      <App />
+    </AppContextProvider>
+  );
+}
+
+export default AppRoot;

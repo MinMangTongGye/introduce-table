@@ -1,0 +1,116 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "questions": {
+            "items": {
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "is_sensitive": {
+                        "type": "boolean"
+                    },
+                    "key": {
+                        "type": "string"
+                    },
+                    "question": {
+                        "anyOf": [
+                            {
+                                "properties": {
+                                    "type": {
+                                        "enum": [
+                                            "image"
+                                        ],
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "multiLine": {
+                                        "type": "boolean"
+                                    },
+                                    "prefix": {
+                                        "type": "string"
+                                    },
+                                    "suffix": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "enum": [
+                                            "string"
+                                        ],
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "keys": {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    "type": {
+                                        "enum": [
+                                            "stringset"
+                                        ],
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "keys": {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    "multiple": {
+                                        "type": "boolean"
+                                    },
+                                    "type": {
+                                        "enum": [
+                                            "checkboxset"
+                                        ],
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "prefix": {
+                                        "type": "string"
+                                    },
+                                    "suffix": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "enum": [
+                                            "stringrange"
+                                        ],
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        ]
+                    },
+                    "title": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}
+
