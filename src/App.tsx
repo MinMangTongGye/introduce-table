@@ -7,12 +7,13 @@ import { IntroPage } from './pages/IntroPage';
 import Questions from './questions.json';
 import {QuestionPage} from "./pages/QuestionPage";
 import {AppContext, AppContextProvider} from "./contexts/AppContext";
+import {ResultPage} from "./pages/ResultPage";
 
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   
-  height: 100vh;
+  min-height: 100vh;
   
   justify-content: center;
   
@@ -48,6 +49,10 @@ function App() {
           nextQuestion={nextQuestion}
           skipQuestion={skipQuestion}
         />
+      </> }
+
+      { currentPhase === 'result' && <>
+          <ResultPage />
       </> }
 
     </AppContainer>

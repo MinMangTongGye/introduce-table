@@ -8,12 +8,12 @@ type IAppContext = {
   currentPhase: AppPhase;
   currentQuestion: number;
 
-  responses: Record<string, string>;
+  responses: Record<string, any>;
 
   setPhase: (phase: AppPhase) => Promise<unknown>;
 
-  nextQuestion: () => Promise<unknown>;
-  skipQuestion: () => Promise<unknown>;
+  nextQuestion: (key: string, value: any) => Promise<unknown>;
+  skipQuestion: (key: string) => Promise<unknown>;
 };
 
 export const AppContext = React.createContext<IAppContext>({
@@ -35,19 +35,36 @@ export const AppContextProvider: React.FC<PropsWithChildren & {
 }> = ({ questions, children }) => {
   const [currentPhase, $setPhase] = useState<IAppContext['currentPhase']>('title');
   const [currentQuestion, setQuestion] = useState<number>(0);
-  const [responses, setResponses] = useState<Record<string, string>>({});
+  const [responses, setResponses] = useState<Record<string, any>>({});
 
   const setPhase = useCallback(async (phase: AppPhase) => {
     $setPhase(phase)
   }, []);
 
-  const nextQuestion = useCallback(async () => {
-    setQuestion(currentQuestion + 1);
-  },[currentQuestion]);
+  const nextQuestion = useCallback(async (key: string, value: any) => {
+    const newResponses = {
+      ...responses,
+    };
+    newResponses[key] = value;
 
-  const skipQuestion = useCallback(async () => {
-    setQuestion(currentQuestion + 1);
-  },[currentQuestion]);
+    console.debug(newResponses);
+
+    setResponses(newResponses);
+
+    if (currentQuestion + 1 >= questions.length) {
+      await setPhase('result');
+    } else {
+      setQuestion(currentQuestion + 1);
+    }
+  },[responses, currentQuestion, questions, setPhase]);
+
+  const skipQuestion = useCallback(async (key: string) => {
+    if (currentQuestion + 1 >= questions.length) {
+      await setPhase('result');
+    } else {
+      setQuestion(currentQuestion + 1);
+    }
+  },[currentQuestion, questions, setPhase]);
 
   return (
     <AppContext.Provider value={{
