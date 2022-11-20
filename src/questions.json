@@ -1,0 +1,425 @@
+{
+  "questions": [
+    {
+      "key": "1_photo",
+      "title": "사진 업로드",
+      "description": "자기 소개서에 표시될 사진을 올릴 수 있습니다.",
+      "question": {
+        "type": "image"
+      }
+    },
+    {
+      "key": "2_name",
+      "title": "이름 입력",
+      "description": "자기 소개서에 표시될 이름을 입력하세요.",
+      "question": {
+        "type": "stringset",
+        "keys": [
+          "한글",
+          "한자",
+          "영문"
+        ]
+      }
+    },
+    {
+      "key": "3_height",
+      "title": "신장 입력",
+      "description": "자기 소개서에 표시될 신장 (키)를 입력하세요.",
+      "question": {
+        "type": "string",
+        "suffix": "cm"
+      }
+    },
+    {
+      "key": "4_weight",
+      "title": "체중 입력",
+      "description": "자기 소개서에 표시될 체중을 입력하세요.",
+      "question": {
+        "type": "string",
+        "suffix": "kg"
+      }
+    },
+    {
+      "key": "5_birthday",
+      "title": "생년월일",
+      "description": "자기 소개서에 표시될 생년월일을 입력하세요.",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "6_blood_type",
+      "title": "혈액형",
+      "description": "혈액형을 입력하세요.",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "A", "B", "AB", "O"
+        ]
+      }
+    },
+    {
+      "key": "7_hiv",
+      "title": "HIV",
+      "description": "FIXME: 민감한 섹션이라 어떻게 설명을 적어야 할지 모르겠어요.",
+      "is_sensitive": true,
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "양성", "음성"
+        ]
+      }
+    },
+    {
+      "key": "8_residence",
+      "title": "현 거주지",
+      "description": "자기 소개서에 표시될 거주지를 입력하세요.",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "10_size",
+      "title": "발기시 음경 크기",
+      "description": "TODO",
+      "question": {
+        "type": "string",
+        "suffix": "cm"
+      }
+    },
+    {
+      "key": "11_circum",
+      "title": "포경 여부",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "포경",
+          "자포",
+          "아직 안 까짐"
+        ]
+      }
+    },
+    {
+      "key": "12_relationship",
+      "title": "현재 연애는",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "연애 중",
+          "애인 구함",
+          "연애를 원치 않음"
+        ]
+      }
+    },
+    {
+      "key": "13_relationship_2",
+      "title": "섹파/FWB 유무",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "있음",
+          "없음"
+        ]
+      }
+    },
+
+    {
+      "key": "14_relationship_3",
+      "title": "원하는 연애",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "일대일연애",
+          "다자연애",
+          "열린관계"
+        ]
+      }
+    },
+    {
+      "key": "15_position",
+      "title": "최근의 섹스 포지션",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "multiple": true,
+        "keys": [
+          "탑",
+          "올탑",
+          "올",
+          "올바텀",
+          "바텀",
+          "비선호"
+        ]
+      }
+    },
+    {
+      "key": "16_position_2",
+      "title": "원하는 상대의 포지션",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "multiple": true,
+        "keys": [
+          "탑",
+          "올탑",
+          "올",
+          "올바텀",
+          "바텀",
+          "비선호",
+          "상관없음"
+        ]
+      }
+    },
+
+    {
+      "key": "17_fav",
+      "title": "식되는 체형",
+      "description": "TODO",
+      "question": {
+        "type": "stringset",
+        "multiple": true,
+        "keys": [
+          "신장",
+          "체중"
+        ]
+      }
+    },
+    {
+      "key": "18_fav_2",
+      "title": "식에 가까운 연예인",
+      "description": "TODO",
+      "question": {
+        "type": "string",
+        "multiLine": true
+      }
+    },
+    {
+      "key": "19_fav_3",
+      "title": "내 식은 근육이",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "많기를 원함",
+          "적당하기를 원함",
+          "적기를 원함",
+          "상관 없음"
+        ]
+      }
+    },
+    {
+      "key": "20_fav_4",
+      "title": "내 식은 살이",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "많기를 원함",
+          "적당하기를 원함",
+          "적기를 원함",
+          "상관 없음"
+        ]
+      }
+    },
+    {
+      "key": "21_drink",
+      "title": "나는 음주를",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "한다",
+          "안 한다",
+          "좋아한다",
+          "안 좋아한다"
+        ]
+      }
+    },
+    {
+      "key": "22_drink_2",
+      "title": "내 애인은 음주를",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "했으면 한다",
+          "안 했으면 한다",
+          "하건 말건 상관 없다"
+        ]
+      }
+    },
+    {
+      "key": "24_smoke",
+      "title": "나는 흡연를",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "한다",
+          "안 한다",
+          "좋아한다",
+          "안 좋아한다"
+        ]
+      }
+    },
+    {
+      "key": "25_smoke",
+      "title": "내 애인은 흡연을",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "했으면 한다",
+          "안 했으면 한다",
+          "하건 말건 상관 없다"
+        ]
+      }
+    },
+    {
+      "key": "26_music_genre",
+      "title": "좋아하는 음악 장르는",
+      "description": "TODO",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "27_movie_genre",
+      "title": "좋아하는 영화 장르는",
+      "description": "TODO",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "28_food_like",
+      "title": "좋아하는 음식은",
+      "description": "TODO",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "29_food_dislike",
+      "title": "못 먹는 음식은",
+      "description": "TODO",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "30_",
+      "title": "나는 끼가",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "있는 편",
+          "없는 편"
+        ]
+      }
+    },
+    {
+      "key": "31_",
+      "title": "나는 애교가",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "있는 편",
+          "없는 편"
+        ]
+      }
+    },
+    {
+      "key": "31_",
+      "title": "나는 섹스를.. (1/2)",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "만나서 바로 하길 원함",
+          "조금 알아간 다음에 하길 원함",
+          "상대방의 요구에 맞추겠음",
+          "원치 않음 / 하기 싫음"
+        ]
+      }
+    },
+    {
+      "key": "31_",
+      "title": "나는 섹스를.. (2/2)",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "내가 리드하는 것을 좋아함",
+          "상대가 리드하는 것을 좋아함",
+          "서로 격렬한 것을 좋아함",
+          "서로 부드러운 것을 좋아함"
+        ]
+      }
+    },
+    {
+      "key": "29_food_dislike",
+      "title": "내가 원하는 이상적인 섹스는",
+      "description": "TODO",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "29_food_dislike",
+      "title": "섹스할 때 정말 안 했으면 하는건",
+      "description": "TODO",
+      "question": {
+        "type": "string"
+      }
+    },
+    {
+      "key": "29_food_dislike",
+      "title": "바로 직전의 섹스는",
+      "description": "TODO",
+      "question": {
+        "type": "stringset",
+        "keys": [
+          "얼마 전",
+          "누구와",
+          "어디에서"
+        ]
+      }
+    },
+    {
+      "key": "31_",
+      "title": "나는 게이인 게 티가",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "나는 편 같다",
+          "안 나는 편 같다"
+        ]
+      }
+    },
+    {
+      "key": "31_",
+      "title": "내가 커밍아우승ㄹ 한 사람",
+      "description": "TODO",
+      "question": {
+        "type": "checkboxset",
+        "keys": [
+          "부모",
+          "형제",
+          "친척",
+          "퀴어 친구",
+          "비퀴어 친구"
+        ]
+      }
+    }
+  ]
+
+
+}
