@@ -336,7 +336,7 @@
       }
     },
     {
-      "key": "31_",
+      "key": "32_",
       "title": "나는 섹스를.. (1/2)",
       "description": "TODO",
       "question": {
@@ -350,7 +350,7 @@
       }
     },
     {
-      "key": "31_",
+      "key": "33_",
       "title": "나는 섹스를.. (2/2)",
       "description": "TODO",
       "question": {
@@ -364,7 +364,7 @@
       }
     },
     {
-      "key": "29_food_dislike",
+      "key": "34_",
       "title": "내가 원하는 이상적인 섹스는",
       "description": "TODO",
       "question": {
@@ -372,7 +372,7 @@
       }
     },
     {
-      "key": "29_food_dislike",
+      "key": "35_",
       "title": "섹스할 때 정말 안 했으면 하는건",
       "description": "TODO",
       "question": {
@@ -380,7 +380,7 @@
       }
     },
     {
-      "key": "29_food_dislike",
+      "key": "36_",
       "title": "바로 직전의 섹스는",
       "description": "TODO",
       "question": {
@@ -393,7 +393,7 @@
       }
     },
     {
-      "key": "31_",
+      "key": "37_",
       "title": "나는 게이인 게 티가",
       "description": "TODO",
       "question": {
@@ -405,8 +405,8 @@
       }
     },
     {
-      "key": "31_",
-      "title": "내가 커밍아우승ㄹ 한 사람",
+      "key": "38_",
+      "title": "내가 커밍아웃을 한 사람",
       "description": "TODO",
       "question": {
         "type": "checkboxset",
