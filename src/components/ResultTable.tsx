@@ -1,7 +1,10 @@
+import {useCallback, useEffect, useRef} from "react";
 import styled from '@emotion/styled';
 
 import Typo from "./Typo"
-import {useCallback, useEffect, useRef} from "react";
+
+import MinmangStamp from "../minmang.png";
+
 
 type ResultTableProps = {
   responses: Record<string, any>;
@@ -397,7 +400,7 @@ export const ResultTable = ({ responses }: ResultTableProps) => {
 
           <p>이상의 내용에 아무 이상이 없음을 민망통계가 확인합니다.</p>
           <footer>
-            민망통계 <img src="/minmang.png" />
+            민망통계 <img src={MinmangStamp} />
           </footer>
         </section>
       </div>
