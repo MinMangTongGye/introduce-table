@@ -34,11 +34,14 @@ const QuestionArea = styled.div`
 type QuestionPageProps = {
   questionDef: QuestionDef;
 
+  currentIndex: number;
+  totalCount: number;
+
   nextQuestion: (key: string, value: any) => Promise<unknown>;
   skipQuestion: (key: string) => Promise<unknown>;
 }
 
-export const QuestionPage = ({ questionDef, nextQuestion, skipQuestion }: QuestionPageProps) => {
+export const QuestionPage = ({ questionDef, currentIndex, totalCount, nextQuestion, skipQuestion }: QuestionPageProps) => {
   const { question } = questionDef;
   const [isValidated, setValidated] = useState<boolean>(false);
 
@@ -77,7 +80,7 @@ export const QuestionPage = ({ questionDef, nextQuestion, skipQuestion }: Questi
     <Page fullscreen>
       <Header>
         <Typo.H1>{ questionDef.title }</Typo.H1>
-        <Typo.H3>{ questionDef.description }</Typo.H3>
+        <Typo.H3>({totalCount}개 질문 중 {currentIndex + 1}번째) { questionDef.description }</Typo.H3>
       </Header>
 
       <QuestionArea>

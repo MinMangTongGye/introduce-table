@@ -81,7 +81,7 @@
     {
       "key": "10_size",
       "title": "발기시 음경 크기",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string",
         "suffix": "cm"
@@ -90,7 +90,7 @@
     {
       "key": "11_circum",
       "title": "포경 여부",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -103,7 +103,7 @@
     {
       "key": "12_relationship",
       "title": "현재 연애는",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -116,7 +116,7 @@
     {
       "key": "13_relationship_2",
       "title": "섹파/FWB 유무",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -129,7 +129,7 @@
     {
       "key": "14_relationship_3",
       "title": "원하는 연애",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -142,7 +142,7 @@
     {
       "key": "15_position",
       "title": "최근의 섹스 포지션",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "multiple": true,
@@ -159,7 +159,7 @@
     {
       "key": "16_position_2",
       "title": "원하는 상대의 포지션",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "multiple": true,
@@ -178,7 +178,7 @@
     {
       "key": "17_fav",
       "title": "식되는 체형",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "stringset",
         "multiple": true,
@@ -191,7 +191,7 @@
     {
       "key": "18_fav_2",
       "title": "식에 가까운 연예인",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string",
         "multiLine": true
@@ -200,7 +200,7 @@
     {
       "key": "19_fav_3",
       "title": "내 식은 근육이",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -214,7 +214,7 @@
     {
       "key": "20_fav_4",
       "title": "내 식은 살이",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -228,9 +228,10 @@
     {
       "key": "21_drink",
       "title": "나는 음주를",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
+        "multiple": true,
         "keys": [
           "한다",
           "안 한다",
@@ -242,9 +243,10 @@
     {
       "key": "22_drink_2",
       "title": "내 애인은 음주를",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
+        "multiple": true,
         "keys": [
           "했으면 한다",
           "안 했으면 한다",
@@ -254,10 +256,11 @@
     },
     {
       "key": "24_smoke",
-      "title": "나는 흡연를",
-      "description": "TODO",
+      "title": "나는 흡연을",
+      "description": "",
       "question": {
         "type": "checkboxset",
+        "multiple": true,
         "keys": [
           "한다",
           "안 한다",
@@ -269,9 +272,10 @@
     {
       "key": "25_smoke",
       "title": "내 애인은 흡연을",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
+        "multiple": true,
         "keys": [
           "했으면 한다",
           "안 했으면 한다",
@@ -282,7 +286,7 @@
     {
       "key": "26_music_genre",
       "title": "좋아하는 음악 장르는",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string"
       }
@@ -290,7 +294,7 @@
     {
       "key": "27_movie_genre",
       "title": "좋아하는 영화 장르는",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string"
       }
@@ -298,7 +302,7 @@
     {
       "key": "28_food_like",
       "title": "좋아하는 음식은",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string"
       }
@@ -306,7 +310,7 @@
     {
       "key": "29_food_dislike",
       "title": "못 먹는 음식은",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string"
       }
@@ -314,7 +318,7 @@
     {
       "key": "30_",
       "title": "나는 끼가",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -326,7 +330,7 @@
     {
       "key": "31_",
       "title": "나는 애교가",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -338,7 +342,7 @@
     {
       "key": "32_",
       "title": "나는 섹스를.. (1/2)",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -352,9 +356,10 @@
     {
       "key": "33_",
       "title": "나는 섹스를.. (2/2)",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
+        "multiple": true,
         "keys": [
           "내가 리드하는 것을 좋아함",
           "상대가 리드하는 것을 좋아함",
@@ -366,7 +371,7 @@
     {
       "key": "34_",
       "title": "내가 원하는 이상적인 섹스는",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string"
       }
@@ -374,7 +379,7 @@
     {
       "key": "35_",
       "title": "섹스할 때 정말 안 했으면 하는건",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "string"
       }
@@ -382,7 +387,7 @@
     {
       "key": "36_",
       "title": "바로 직전의 섹스는",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "stringset",
         "keys": [
@@ -395,7 +400,7 @@
     {
       "key": "37_",
       "title": "나는 게이인 게 티가",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
         "keys": [
@@ -407,9 +412,10 @@
     {
       "key": "38_",
       "title": "내가 커밍아웃을 한 사람",
-      "description": "TODO",
+      "description": "",
       "question": {
         "type": "checkboxset",
+        "multiple": true,
         "keys": [
           "부모",
           "형제",

@@ -48,6 +48,10 @@ function App() {
       { currentPhase === 'question' && <>
         <QuestionPage
           questionDef={questions[currentQuestion]}
+
+          currentIndex={currentQuestion}
+          totalCount={questions.length}
+
           nextQuestion={nextQuestion}
           skipQuestion={skipQuestion}
         />
