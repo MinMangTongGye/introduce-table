@@ -30,7 +30,6 @@ export const StringSetQuestionForm = ({ question, value, onChange }: StringSetQu
           <Typo.P>{ key }</Typo.P>
           <Input value={value[key]} onChange={(e) => {
             const prevValue = {...value};
-            console.log(prevValue);
             prevValue[key] = e.target.value;
             onChange(prevValue);
           }} />

@@ -47,8 +47,6 @@ export const AppContextProvider: React.FC<PropsWithChildren & {
     };
     newResponses[key] = value;
 
-    console.debug(newResponses);
-
     setResponses(newResponses);
 
     if (currentQuestion + 1 >= questions.length) {
