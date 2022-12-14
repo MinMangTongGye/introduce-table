@@ -5,11 +5,14 @@ import Typo from "../Typo";
 import {useEffect, useRef, useState} from "react";
 
 const PhotoArea = styled.label`
-  display: block;
+  display: flex;
   margin: 0 auto;
   
   width: 250px;
   height: 250px;
+  
+  align-items: center;
+  justify-content: center;
   
   border: 1px solid black;
   
@@ -38,6 +41,7 @@ export const ImageQuestionForm = ({ question, onChange }: ImageQuestionFormProps
       <PhotoArea style={{
         backgroundImage: `url(${fileContent})`
       }}>
+        { !fileContent && <Typo.P>여기를 눌러 이미지를 선택하십시오</Typo.P> }
         <input type="file" onChange={(e) => {
           const fileReader = new FileReader();
           const file = e.target.files?.item(0);
