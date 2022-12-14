@@ -10,6 +10,8 @@ import {AppContext, AppContextProvider} from "./contexts/AppContext";
 import {ResultPage} from "./pages/ResultPage";
 
 const AppContainer = styled.div`
+  position: relative;
+  
   display: flex;
   flex-direction: column;
   
